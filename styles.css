@@ -5,7 +5,6 @@
   width: 675px;
   margin: 50px auto;
 }
-
 .wrapper .header {
   width: 100%;
   height: 100px;
@@ -14,17 +13,14 @@
   font-size: 30px;
   font-family: sans-serif
 }
-
 .wrapper .header .title {
   display: inline-block;
   margin-top: 30px;
   padding-left: 20px
 }
-
 .wrapper .fields {
   padding: 25px;
 }
-
 .wrapper .fields input,
 .wrapper .fields textarea,
 .wrapper .fields select
@@ -37,17 +33,14 @@
   margin: 10px;
   font-size: 15px;
 }
-
 .wrapper .fields textarea {
   height: 125px;
   padding: 15px;
 }
-
 .wrapper .footer {
   background-color: #C8DEF1;
   padding: 15px;
 }
-
 .wrapper .footer button {
   background-color: #3E8ACC;
   width: 120px;
