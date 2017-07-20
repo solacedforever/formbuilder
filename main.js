@@ -85,28 +85,28 @@ let formData = [
 let fields = document.querySelector('#fields');
 for (let i = 0; i < formData.length; i++) {
     if (formData[i].label != "Select Language") {
-    if (formData[i].type != "textarea") {
-      let input = document.createElement('input');
-      input.type = formData[i].type;
-      input.placeholder = formData[i].label;
-      input.id = formData[i].id;
-      input.icon = formData[i].icon;
-      input.options = formData[i].options;
-      fields.appendChild(input);
+        if (formData[i].type != "textarea") {
+            let input = document.createElement('input');
+            input.type = formData[i].type;
+            input.placeholder = formData[i].label;
+            input.id = formData[i].id;
+            input.icon = formData[i].icon;
+            input.options = formData[i].options;
+            fields.appendChild(input);
    }
   }
  if (formData[i].options.length > 0) {
     let dropdown = document.createElement("select");
     let selectOption = `${formData[i].label}`
-   let option = document.createElement("option");
+    let option = document.createElement("option");
     option.innerHTML = `${selectOption}`;
     dropdown.appendChild(option);
-      for (a = 0; a < formData[i].options.length; a++) {
-          let dropdownOption = document.createElement("option");
-          dropdownOption.setAttribute("value", formData[i].options[a].value);
-          dropdownOption.innerHTML = formData[i].options[a].label;
-          dropdown.appendChild(dropdownOption);
-          fields.appendChild(dropdown);
+    for (a = 0; a < formData[i].options.length; a++) {
+        let dropdownOption = document.createElement("option");
+        dropdownOption.setAttribute("value", formData[i].options[a].value);
+        dropdownOption.innerHTML = formData[i].options[a].label;
+        dropdown.appendChild(dropdownOption);
+        fields.appendChild(dropdown);
    }
   }
  if (formData[i].type === "textarea") {
